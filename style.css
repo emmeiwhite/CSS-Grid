@@ -45,7 +45,24 @@ body{
 .three{
   grid-column: 1/4;
   grid-row: 2/4;
+  /* --- NESTED GRIDS --- */
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+  grid-gap: 1rem;
 }
+
+
 .five{
   grid-column:2/4
+}
+
+.six{
+  grid-column: 1/4;
+}
+.seven{
+  grid-column: 2/4;
+}
+.eight{
+  grid-row: 6/7;
 }
